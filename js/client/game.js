@@ -958,7 +958,7 @@ Game.basicAtlasAnimation = function(sprite){ // sprite is the sprite to which th
 
 Game.displayHUD = function() {
     var lifeX = Game.borderPadding;
-    var lifeY = game.height - Game.borderPadding - Game.HUDheight + 6;
+    var lifeY = game.height - Game.borderPadding - Game.HUDheight + 5;
     Game.barY = game.height - Game.borderPadding - Game.HUDheight;
 
     Game.HUDbuttons = game.add.group();
@@ -968,7 +968,7 @@ Game.displayHUD = function() {
 
     Game.HUD.add(game.add.sprite(Game.borderPadding, Game.barY, 'atlas1','bar'));
     Game.HUD.add(Game.weaponIcon = game.add.sprite(Game.borderPadding + 210, Game.barY, 'atlas3'));
-    Game.HUD.add(Game.armorIcon = game.add.sprite(Game.borderPadding + 244, Game.barY + 3,'atlas3'));
+    Game.HUD.add(Game.armorIcon = game.add.sprite(Game.borderPadding + 244, Game.barY + 0,'atlas3'));
 
     Game.HUDmessage = null;
     Game.messages = game.add.group();
