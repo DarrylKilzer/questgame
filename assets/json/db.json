@@ -364,7 +364,7 @@
       "id": 3,
       "name": "rat",
       "achievement": 2,
-      "speed": 100,
+      "speed": 300,
       "atk": 0,
       "def": 2,
       "life": 25,
