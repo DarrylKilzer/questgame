@@ -69,8 +69,8 @@ if(myArgs.waitForDatabase) {
 }
 
 if(myArgs.heroku){ // --heroku flag to behave according to Heroku's specs
-    mongoHost = 'heroku_4tv68zls:'+myArgs.pass+'@ds141368.mlab.com:41368';
-    mongoDBName = 'heroku_4tv68zls';
+    mongoHost = 'admin:'+myArgs.pass+'@ds151062.mlab.com:51062';
+    mongoDBName = 'phasergame';
 }else {
     var mongoPort = (myArgs.mongoPort || 27017);
     var mongoServer = (myArgs.mongoServer || 'localhost');

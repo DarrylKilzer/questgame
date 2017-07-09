@@ -68,7 +68,8 @@ Game.makeIDmap = function(collection,map){
 
 Game.create = function() {
     Game.HUD = game.add.group(); // Group containing all objects involved in the HUD
-    Game.HUD.add(game.add.sprite(0, 0, 'atlas1','border')); // Adds the gray border of the game
+    //REMOVED UNTIL SIZING FIXED
+    // Game.HUD.add(game.add.sprite(0, 0, 'atlas1','border')); // Adds the gray border of the game
     Game.displayLoadingScreen(); // Display the loading screen
 
     // A few maps mapping the name of an element (a monster, npc, item...) to its properties
@@ -433,7 +434,7 @@ Game.initWorld = function(data){ // Initialize the game world based on the serve
     // Destroy loading screen
     Game.loadingShade.destroy();
     Game.loadingText.destroy();
-    Game.messageIn((Game.isNewPlayer ? 'Welcome to PhaserQuest!' : 'Welcome back!' ));
+    Game.messageIn((Game.isNewPlayer ? 'Welcome to Magic & Mythos!' : 'Welcome back to Magic & Mythos!' ));
 
     if(Game.isNewPlayer) Game.toggleHelp();
 };
