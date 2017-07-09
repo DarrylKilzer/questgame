@@ -367,7 +367,7 @@
       "speed": 100,
       "atk": 0,
       "def": 2,
-      "life": 100,
+      "life": 25,
       "frames" : {
         "death": [0,3],
         "attack_right": [4,9],
