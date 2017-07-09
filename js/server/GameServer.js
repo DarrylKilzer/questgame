@@ -15,8 +15,8 @@ var GameServer = {
     updateRate: 1000/12,
     regenRate: 1000*2, // Rate at which the regenerate() method is called
     itemRespawnDelay: 1000*30, // Delay (ms) after which a respawnable item will respawn
-    monsterRespawnDelay: 1000*30, // Delay (ms) after which a monster will respawn
-    itemVanishDelay: 1000*9, // How long does dropped loot remain visible (ms)
+    monsterRespawnDelay: 1000*120, // Delay (ms) after which a monster will respawn
+    itemVanishDelay: 1000*15, // How long does dropped loot remain visible (ms)
     retryDelay: 1000*3, // Stuff don't respawn on cells occupied by players ; if a cell is occupied, the respawn call will retry after this amount of time (ms)
     walkUpdateDelay: 80, // How many ms between two updateWalk() calls
     fightUpdateDelay: 200, // How many ms between two updateFight() calls
